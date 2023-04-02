@@ -16,7 +16,7 @@ ask = green + '[' + white + '?' + green + '] '+ yellow
 success = green + '[' + white + '√' + green + '] '
 error = red + '[' + white + '!' + red + '] '
 info= yellow + '[' + white + '+' + yellow + '] '+ cyan
-pw= yellow + '[' + white + '+' +yellow + ']'+' Please Wait!'
+pw= yellow + '[' + white + '+' +yellow + ']'+' Tunggu sebentar!'
 
 begin
     require "httparty"
@@ -44,7 +44,7 @@ print ask+"Pilih tipe apa yang mau di download:\n\n1.Audio\n2.Video\n0.Exit\n"+y
 type=gets.chomp
 case type
 when "1"
-print "\n"+ask+"Enter the youtube url:\n"+yellow+"---> "+ green
+print "\n"+ask+"Masukkan link YouTube:\n"+yellow+"---> "+ green
 url=gets.chomp
 if not url.include? "youtu"
     puts error+"Error! Ini bukan link YouTube!"
